@@ -22,12 +22,14 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
 	implementation("org.springframework.boot:spring-boot-starter-web")
+
 	implementation("io.micrometer:micrometer-tracing-bridge-brave")
-//	implementation("io.micrometer:micrometer-tracing-bridge-otel")
-	implementation("io.zipkin.brave:brave-instrumentation-messaging")
+
 	implementation("io.zipkin.brave:brave-instrumentation-spring-rabbit")
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 	implementation("org.springframework.boot:spring-boot-starter-amqp")
+	implementation("org.springframework.kafka:spring-kafka")
+	implementation("io.zipkin.brave:brave-instrumentation-kafka-clients")
 
 	implementation ("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.0")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
