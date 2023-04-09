@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring3
+
+server:
+  port: 1981
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"

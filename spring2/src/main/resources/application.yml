@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring2
+  sleuth:
+    propagation:
+      type: w3c,b3
+    messaging:
+      rabbit:
+        enabled: true
+server:
+  port: 1980
